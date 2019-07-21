@@ -1,0 +1,38 @@
+.hireme {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: auto;
+  min-height: calc(100vh - var(--footer-height) - var(--header-height));
+}
+
+.hiremeImage {
+  max-width: 200px;
+  padding: 4vh 0;
+}
+
+.hiremeText {
+  padding: 2vh 5vw 2vh 2vw;
+  max-width: 600px;
+}
+
+.sellParagraph {
+  text-align: left;
+}
+
+@media(max-width: 750px) {
+  .hireme {
+    flex-flow: column;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+
+  .hiremeText {
+    height: auto;
+  }
+
+  .hiremeImage {
+    align-self: center;
+    padding: 1vh 0 8vh;
+  }
+}

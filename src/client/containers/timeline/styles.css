@@ -1,0 +1,79 @@
+.timelineContainer {
+
+}
+
+.timeline .splash {
+  background: var(--linear-gradient-2);
+  height: 120px;
+  margin-bottom: 30px;
+}
+
+.vertical-timeline {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 80px;
+}
+
+.vertical-timeline-element-icon {
+  box-shadow: 0 0 0 4px var(--light-purple-1);
+  background: white !important;
+  border: 1px solid var(--light-purple-1);
+}
+
+.vertical-timeline-element-icon svg {
+  width: 34px;
+  height: 34px;
+  margin-left: -17px;
+  margin-top: -17px;
+}
+
+.vertical-timeline::before {
+  background: var(--light-purple-1);
+  height: 100%;
+}
+
+.vertical-timeline-element-content {
+  padding: 0.7em 1em 1em;
+  border: 1px solid var(--light-blue-1);
+  border-radius: 3px;
+  background: white;
+  cursor: pointer;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.vertical-timeline-element-content:hover {
+  border-color: black;
+  box-shadow: 0 3px 0 #aaa;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.vertical-timeline-element-title {
+  font-size: 28px;
+}
+
+.vertical-timeline-element-content::before {
+  display: none;
+}
+
+@media(min-width: 1170px) {
+  .vertical-timeline-element-content .vertical-timeline-element-date {
+    color: black;
+    font-weight: 100;
+    opacity: 1;
+    padding: 0.8em 20px;
+  }
+}
+
+@media(max-width: 750px) {
+  .timeline .splash {
+    margin-bottom: 0;
+  }
+
+  .vertical-timeline-element-icon svg {
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    margin-top: -12px;
+  }
+}

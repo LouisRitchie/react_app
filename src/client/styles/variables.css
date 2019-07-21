@@ -1,0 +1,62 @@
+body {
+  --navy: #062035;
+  --margin-left: 64px;
+  --header-height: 55px;
+  --footer-height: 40px;
+
+  --p-text-align: initial;
+
+  --splash-top: 40px;
+  --splash-margin-bottom: 0;
+  
+  --nav-item-line-height: 55px;
+
+  --value-prop-text-container-margin-centerside: 45px;
+  --value-prop-text-container-margin-edgeside: 0;
+  --value-prop-text-margin-bottom: 30px;
+
+  --slider-container-width: 40vw;
+  --slider-container-margin: initial;
+
+  --light-blue-1: #e6edff;
+  --light-purple-1: #ece3ff;
+  --light-blue-2: #e1e9ff;
+  --light-purple-2: #dce1ff;
+
+  --linear-gradient-1: linear-gradient(180deg, white, var(--light-blue-2), var(--light-purple-2));
+  --linear-gradient-2: linear-gradient(180deg, var(--light-blue-1), var(--light-purple-1), white);
+  --linear-gradient-3: linear-gradient(120deg, var(--light-blue-1), var(--light-purple-1), white, var(--light-blue-2), var(--light-purple-2), white);
+  --linear-gradient-2: linear-gradient(180deg, var(--light-blue-1), white);
+
+  --repeating-linear-gradient: repeating-linear-gradient(to left, #779eff 0, #779eff 40px, #9a68ff 40px, #9a68ff 80px, #1e9aff 80px, #1e9aff 120px, #5b8aff 120px, #5b8aff 160px, #425eff 160px, #425eff 200px);
+}
+
+@media(max-width: 750px) {
+  body {
+    --margin-left: 16px;
+    --header-height: 90px;
+
+    --p-text-align: justify;
+
+    --splash-top: 16px;
+    --splash-margin-bottom: 40px;
+    --splash-heading-text-align: center;
+
+    --nav-item-line-height: 38px;
+
+    --value-prop-text-container-margin-centerside: 10px;
+    --value-prop-text-container-margin-edgeside: 10px;
+    --value-prop-text-margin-bottom: 0;
+
+    --slider-container-width: 420px;
+    --slider-container-height: 236px;
+    --slider-container-margin: 0 auto;
+  }
+}
+
+@media(max-width: 420px) {
+  body {
+    --slider-container-width: 320px;
+    --slider-container-height: 180px;
+  }
+}

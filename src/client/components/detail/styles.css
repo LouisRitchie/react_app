@@ -1,0 +1,150 @@
+.detailPage {
+  max-width: calc(100% - (var(--margin-left)) * 2 - 40px);
+  margin: 0 0 40px var(--margin-left);
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 3px;
+  box-shadow: 0 3px 0 #aaa;
+  width: 100vw;
+}
+
+.detailPageTop {
+  display: flex;
+  flex-flow: row nowrap;
+  height: 40%;
+}
+
+.headers {
+  width: 50%; 
+  height: 50%;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  min-width: 350px;
+}
+
+.detailPage h1 {
+  font-size: 48px;
+  margin-top: -8px;
+  margin-left: -2px;
+}
+
+.detailPage h3 {
+  margin: 10px 0 15px;
+  font-size: 28px;
+}
+
+.detailPage .times {
+  margin-bottom: 15px;
+}
+
+.detailPage .photoWrapper {
+  width: 100%;
+}
+
+.detailPage .photo {
+  width: 90%;
+  margin: 0 5%;
+}
+
+.detailPageBottom {
+  margin-top: 10px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.detailPageBottom .detailLeft {
+  display: inline-block;
+  float: left;
+  padding-right: 6%;
+  width: 45%;
+}
+
+.detailPageBottom .detailRight {
+  display: inline-block;
+  padding-left: 3%;
+  width: 45%;
+  border-left: 1px solid #ddd;
+  height: 100%
+}
+
+.detailTitle {
+  text-decoration: underline;
+}
+
+.detailPageDescription {
+  font-size: 14px;
+}
+
+.detailPage ol {
+  font-size: 14px;
+}
+
+.detailPage .headers > span {
+  line-height: 20px;
+  font-weight: 100;
+  font-size: 15px;
+}
+
+.noImage {
+  color: #ddd;
+  height: 97%;
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px dashed #ddd;
+  border-radius: 3px;
+}
+
+@media(max-width: 750px) {
+  .detailPage {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .detailPageTop {
+    flex-flow: column;
+    justify-content: space-between;
+    min-height: 360px;
+  }
+
+  .detailPageTop .headers {
+    padding-bottom: 30px;
+  }
+
+  .detailPageTop .headers * {
+    max-width: 80vw;
+    min-height: 1.2em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .detailPageTop .headers h3 {
+    line-height: 30px;
+  }
+
+  .detailPageTop .headers h1 {
+    margin-bottom: -16px;
+  }
+
+  .detailPageBottom .detailLeft {
+    display: initial;
+    width: initial;
+    padding-right: 0;
+  }
+
+  .detailPageBottom .detailRight {
+    display: initial;
+    width: initial;
+    padding-left: 0;
+    border: none;
+  }
+
+  .noImage {
+    min-height: 150px;
+  }
+}

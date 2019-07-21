@@ -1,0 +1,275 @@
+{
+  covault: {
+    heading: 'Covault Technologies',
+    subheading: 'Lead Developer (Full Stack)',
+    description: 'I am the lead developer at Covault, and I spearheaded many of the platform\'s features that moved the business forward. I manage multiple codebases: Our Javascript/React frontend, our Elixir/Pheonix backend, and our infrastructure. I\'m responsible for our production app, planning product development, and implementing & releasing features. I\'m most proud of  my ability to quickly deliver crucial features, my strong track record of successful production deployments, and my flexible and innovative code. My code is terse and functional, and makes full use of the language\'s features.',
+    times: 'April 2018 - Present',
+    disciplines: [
+      '_react',
+      'elixir',
+      'git',
+      'css'
+    ],
+    slug: 'covault',
+    extension: 'jpg',
+    hasImage: true,
+    links: [
+      {
+        link: 'http://go.covaultinc.com',
+        description: 'Covault Home'
+      },
+      {
+        link: 'https://staging.covaultapp.com',
+        description: 'Covault App Staging'
+      }
+    ],
+    photoDescription: 'Covault connects dealerships to co-op funds and to media buying campaigns.'
+  },
+  reelgood: {
+    heading: 'Reelgood',
+    subheading: 'Web Developer',
+    description: 'Reelgood keeps track of your favourite shows and streaming services that you\'re subscribed to. I was a full-time web developer at Reelgood for one year. I mostly wrote front end components with React and Redux. We used the RXJS library and epics to interact with tens of APIs that provided search results, handled user auth and email tokens, updated user preferences, and so on. I wrote the playback mechanism, a library that takes the user\'s watched episodes and selected services and determines what link to open when the user hits play on a given show episode or movie.',
+    times: 'March 2017 - March 2018',
+    disciplines: [
+      '_react',
+      'git',
+      'css'
+    ],
+    slug: 'reelgood',
+    extension: 'png',
+    hasImage: true,
+    links: [
+      {
+        link: 'https://reelgood.com',
+        description: 'Reelgood Home'
+      },
+      {
+        link: 'https://reelgood.com/about',
+        description: 'Reelgood About Page'
+      }
+    ],
+    photoDescription: 'Reelgood - All your streaming services in one place.'
+  },
+  leanpub: {
+    heading: 'Leanpub',
+    subheading: 'Junior Developer',
+    description: 'I spent eight months on co-op as a junior dev at Ruboss, the Victoria-based company behind Leanpub. I learned React and Ruby on Rails, and sometimes wrote useful code. This is where I cut my teeth on web development.',
+    times: 'April 2016 - December 2016',
+    disciplines: [
+      '_react',
+      'rails',
+      'git',
+      'css'
+    ],
+    slug: 'leanpub',
+    extension: 'png',
+    hasImage: true,
+    links: [
+      {
+        link: 'https://leanpub.com',
+        description: 'Leanpub Home'
+      },
+      {
+        link: 'https://reelgood.com/p',
+        description: 'Leanpub for Publishers'
+      }
+    ],
+    photoDescription: 'Leanpub - A powerful platform for serious authors.'
+  },
+  uvic: {
+    heading: '3rd Year B.Sc.',
+    subheading: 'Mathematics & Computer Science',
+    description: 'I\'m 12 courses away from a degree in Mathematics and Computer Science (combined single major) from UVic. I started at Thompson Rivers University in 2013 as Mathematics major, then transferred to UVic at the end of my 2nd year, and added a Computer Science component to my degree. I\'m most interested in applied mathematics and software engineering.',
+    slug: 'uvic',
+    disciplines: ['school'],
+    times: 'September 2012 - Present',
+    extension: 'png',
+    hasImage: true,
+    photoDescription: 'My courses.',
+    links: []
+  },
+  cppsnake: {
+    heading: 'C++ Battlesnake',
+    subheading: 'Using Monte-Carlo tree search',
+    times: 'March 2018',
+    description: 'This is an AI that I wrote for Battlesnake 2018. It receives a board state and then uses Monte Carlo tree search (with UCB1-Tuned selection policy) to decide on the next move. The snake is written in C++, and was the second snake I made in 2018. The first snake I coded was in Lua. I knew Lua was fast thanks to Mike Palls LuaJIT, but after looking at some benchmarks and seeing that C++ was actually hundreds of times faster, I knew that I needed to switch languages. In my code, I make heavy use of the Boost Graph Library and a JSON library. I expose the snake as a FastCGI app on port 88. Check the repository for build/deploy details.',
+    hasImage: false,
+    slug: 'cppsnake',
+    disciplines: ['cpp', 'nginx'],
+    links: [
+      {
+        description: 'Source code',
+        link: 'https://github.com/louisritchie/snake'
+      }
+    ]
+  },
+  luasnake: {
+    heading: 'Lua Battlesnake',
+    subheading: 'Strategy: Avoid death.',
+    times: 'Februrary 2018',
+    description: 'This snake was the precursor to my C++ Battlesnake. I intended to write a Lua Battlesnake that used Minimax to handle decision making, so I implemented the avoid-walls-and-other-snakes functionality and then turned my focus to the algorithm. My research revealed that Minimax is not ideal, as it is designed for sequential turn games; Battlesnake is a simultaneous turn game, like rock-paper-scissors - Just try in your head to do Minimax on rock-paper-scissors. At this point, I dropped Minimax, picked up Monte-Carlo tree search, and started implementing a new snake in C++.',
+    slug: 'luasnake',
+    disciplines: ['lua', 'nginx'],
+    links: [
+      {
+        description: 'Source code',
+        link: 'https://github.com/louisritchie/luasnake'
+      }
+    ]
+  },
+  primsalgorithm: {
+    heading: 'Prims Algorithm',
+    subheading: 'Compute Minimum Spanning Trees',
+    times: 'March 2015',
+    description: 'This is 500 lines of Java that demonstrates what a Minimum Spanning Tree (MST) is. It\'s a GUI app using the Swing library. I wanted drag-and-drop functionality, so I gave every edge and vertex a clickable area, and gave it intuitive selection of multiple vertices. The app will compute a MST based on the graph your drew. A MST is a spanning tree of a weighted-edge graph for a given root vertex, that has a minimally expensive path from root to every other vertex. This was the first piece of software that I wrote.',
+    slug: 'primsalgorithm',
+    extension: 'gif',
+    hasImage: true,
+    photoDescription: 'The Java app in use.',
+    disciplines: ['java'],
+    links: [
+      {
+        description: 'Source Code',
+        link: 'https://github.com/louisritchie/Prims_Algorithm'
+      }
+    ]
+  },
+  krispychicken: {
+    heading: 'Chrome Extension',
+    subheading: 'Codename Krispy Chicken',
+    times: 'November 2016',
+    description: 'This is a Chrome extension built by myself and William Grosset for Hack Some Crap in 2016. Hack Some Crap was a hackathon with a theme of building stuff that was impractical or useless, which contrasts with the standard hackathon theme. Our submitted Chrome Extension took the elements of the webpage you were on, replaced images with pictures of fried chicken, and then shook the page about while shifting the background through a range of colours.',
+    start: 'January 2017',
+    end: 'March 2017',
+    hasImage: true,
+    slug: 'krispychicken',
+    photoDescription: 'It shakes your screen around a bunch!',
+    extension: 'png',
+    disciplines: ['node', 'css'],
+    links: [
+      {
+        description: 'Source code',
+        link: 'https://github.com/williamgrosset/krispychicken'
+      }
+    ]
+  },
+  events: {
+    heading: 'Event Organizing',
+    subheading: 'Global Game Jam, HackUVic',
+    times: 'January 2017, March 2017, March 2018',
+    disciplines: ['nginx', 'css', '_react'],
+    description: 'I\'ve organized a number of successful, sponsor-backed tech events in Victoria. I single-handedly ran Global Game Jam in January 2017 to great fanfare, revitalizing the UVic Game Dev club when club activity was waning. Immediately afterward, I helped the UVic WebDev Club put on HackUVic 2017, building out the website and getting sponsorship on their behalf. In 2018, I\'ve helped organize HackUVic 2018, putting my energy into the website, event design, and raising funds.',
+    slug: 'globalgamejam',
+    extension: 'jpg',
+    hasImage: true,
+    photoDescription: 'The 2017 Victoria Global Game Jam home page.',
+    links: [
+      {
+        description: 'HackUVic 2018 website source code',
+        link: 'https://github.com/uvicwebdev/HackUVic-18w'
+      },
+      {
+        description: 'HackUVic 2018 Website',
+        link: 'http://18w.hackuvic.com'
+      },
+      {
+        description: 'HackUVic 2017 website source code',
+        link: 'https://github.com/uvicwebdev/HackUVic-17w'
+      },
+      {
+        description: 'HackUVic 2017 Website',
+        link: 'http://17w.hackuvic.com'
+      },
+      {
+        description: '2017 Global Game Jam website source code',
+        link: 'https://github.com/louisritchie/victoriaggj_landing'
+      }
+    ]
+  },
+  ggj: {
+    heading: 'Global Game Jam',
+    subheading: 'Lead Organizer',
+    times: 'November 2016 - January 2017',
+    description: 'Global Game Jam was a game development competition that I organized. I raised some $3000 from local companies and used it to pay for food and beverages for an entire weekend of game development. The event had 30 participants. I built a little brochure website in plain HTML, set up EventBrite for ticket sales, had T-shirts printed, registered a venue, and did everything else to get it off the ground.',
+    slug: 'globalgamejam',
+    extension: 'png',
+    hasImage: true,
+    photoDescription: 'The 2017 Victoria Global Game Jam home page.',
+    disciplines: ['nginx', 'css'],
+    links: [
+      {
+        description: 'Website source code',
+        link: 'https://github.com/louisritchie/victoriaggj_landing'
+      }
+    ]
+  },
+  hackvictoria: {
+    heading: 'Hack Victoria 2016',
+    subheading: 'UVic Hackathon',
+    times: 'February 2016',
+    description: 'This was a hackathon that my team placed 2nd in. We built a social app that had a Google Maps integration that allowed you to place emojis on the map. One year later, one of my team members started working at Reelgood, and offered me a job there.',
+    hasImage: false,
+    slug: 'hackvictoria',
+    disciplines: ['_react', 'css'],
+    links: [
+      {
+        description: 'Client source code',
+        link: 'https://github.com/luigiplr/emoji-client'
+      },
+      {
+        description: 'Server source code',
+        link: 'https://github.com/LouisRitchie/vicboard-server'
+      }
+    ]
+  },
+  hackuvic17: {
+    heading: 'HackUVic 2017',
+    subheading: 'Co-lead organizer',
+    times: 'January 2017 - March 2017',
+    description: 'I co-organized HackUVic 2017 with members of the UVic WebDev club. I helped raise funds, maintained our web presence, handled T-shirt printing, handled food, bought prizes, and mentored teams.',
+    hasImage: false,
+    slug: 'hackuvic17',
+    disciplines: ['_react', 'css'],
+    links: [
+      {
+        description: 'Website source code',
+        link: 'https://github.com/uvicwebdev/HackUVic-17w'
+      },
+      {
+        description: 'HackUVic 2017 Website',
+        link: 'http://17w.hackuvic.com'
+      }
+    ]
+  },
+  hackuvic18: {
+    heading: 'HackUVic 2018',
+    subheading: 'Co-lead organizer',
+    times: 'January 2018 - March 2018',
+    description: 'I co-organized HackUVic 2018 with members of the UVic WebDev club, as in previous years. I helped raise funds, maintained our web presence, handled T-shirt printing, handled food, bought prizes, and mentored teams.',
+    hasImage: false,
+    slug: 'hackuvic18',
+    disciplines: ['_react', 'css'],
+    links: [
+      {
+        description: 'Website source code',
+        link: 'https://github.com/uvicwebdev/HackUVic-18w'
+      },
+      {
+        description: 'HackUVic 2018 Website',
+        link: 'http://18w.hackuvic.com'
+      }
+    ]
+  },
+  interior: {
+    heading: 'North Shuswap',
+    subheading: 'BC Interior',
+    times: 'May 1994 - September 2015',
+    description: 'I\'m from the North Shuswap, a tiny lakeside community in the BC Interior. Until I was 16 we had no high speed internet, and I would often go out into the woods to collect firewood or to hunt with my brothers and sister. I worked on farms and did hedge trimming. I moved to Kamloops for school, and landscaped in the summers. On the third year, I split time between my employer and a side business doing hedge trimming and yard revivals. It was that summer that I had the idea to move to Victoria and try to strike out a living doing software development.',
+    slug: 'interior',
+    extension: 'jpg',
+    photoDescription: 'Garden boxes, fruit trees, and the shop.',
+    hasImage: true,
+    disciplines: ['work', 'school'],
+    links: []
+  }
+}

@@ -1,0 +1,29 @@
+.sliderContainer {
+  position: relative;
+  max-width: 550px;
+  width: auto;
+  margin: var(--slider-container-margin);
+  flex: 0 0 auto;
+}
+
+.box {
+  position: absolute;
+  max-width: 100%;
+  max-height: 600px;
+}
+
+.boxText {
+  margin: 0 0 8px;
+  width: 100%;
+  text-align: center;
+  transition: top 1s ease-out, opacity 1s ease-out;
+  color: #777;
+  font-size: 13px;
+}
+
+@media(max-width: 750px) {
+  .box {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
