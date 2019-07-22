@@ -2,6 +2,12 @@
 
 The second iteration of [react-app](https://github.com/louisritchie/react-app), Louis's nice portfolio frontend.
 
+## Development Environment
+
+In one terminal, run `npm run watch` and in another, run `npm start`.
+
+The first is the watched webpack build, and the second is a bash script to restart the server when the build is updated.
+
 ## TODO
 
 1. update RXJS version.

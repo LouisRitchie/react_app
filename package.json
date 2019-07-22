@@ -3,16 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "cookie-parser": "^1.4.4",
     "express": "^4.17.1",
+    "http-errors": "^1.7.3",
+    "prop-types": "^15.6.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.1",
-    "webpack": "^4.36.1",
-    "rxjs": "^5.5.7",
     "react-vertical-timeline-component": "^2.0.5",
-    "prop-types": "^15.6.1"
+    "rxjs": "^5.5.7",
+    "webpack": "^4.36.1"
   },
-  "scripts": {},
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch --watch-aggregate-timeout=25 --hot",
+    "start": "./start.sh"
+  },
   "eslintConfig": {
     "extends": "react-app"
   },
