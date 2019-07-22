@@ -16,11 +16,14 @@ class App extends Component {
   render() {
     const { lightsOn } = this.state
 
+    // TODO update this SSR guard with something better.
+    const containerClassName = window ? `container ${lightsOn ? 'lightsOn' : ''} ${window.location.pathname.split('/')[1]}Container` : ''
+
     return (
       <div className="app">
         <Header />
 
-        <div className={`container ${lightsOn ? 'lightsOn' : ''} ${window.location.pathname.split('/')[1]}Container`}>
+        <div className={containerClassName}>
           <Switch>
             {routes.map(({component: Component, name, path, regex}) => (
               <Route exact key={path} path={regex} render={(props) => (

@@ -5,6 +5,8 @@ import routes from 'src/routes.js'
 
 class Header extends Component {
   render() {
+    const navItemClassName = window ? `navItem ${window.location.pathname.split('/')[1] === route.path.split('/')[1] ? 'selected' : ''}` : ''
+
     return (
       <div className="header">
         <h1 className="title"><Link to='/'>Louis Ritchie</Link></h1>
@@ -13,7 +15,7 @@ class Header extends Component {
             <Link
               key={route.path}
               to={route.path}
-              className={`navItem ${window.location.pathname.split('/')[1] === route.path.split('/')[1] ? 'selected' : ''}`}>
+              className={navItemClassName}>
               {route.name}
             </Link>
           ))}

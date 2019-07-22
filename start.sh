@@ -16,7 +16,7 @@ while true; do
   node dist/server.js &
   PID=$!
   echo server started $(date +"%r")
-  inotifywait -e modify -e move -e create -e delete -e attrib -rqq dist
+  inotifywait -e modify -e create -e delete -rqq dist
   sleep 0.2
   echo -n "files were changed; restarting.\t"
   kill $PID

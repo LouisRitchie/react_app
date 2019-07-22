@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { scroll$ } from 'lib/observables.js'
+import { scroll$ } from 'src/observables.js'
 import { interval } from 'rxjs/observable/interval'
 import { take } from 'rxjs/operators/take'
 import { Subject } from 'rxjs/Subject'
