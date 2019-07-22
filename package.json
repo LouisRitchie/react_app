@@ -7,7 +7,10 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.1",
-    "webpack": "^4.36.1"
+    "webpack": "^4.36.1",
+    "rxjs": "^5.5.7",
+    "react-vertical-timeline-component": "^2.0.5",
+    "prop-types": "^15.6.1"
   },
   "scripts": {},
   "eslintConfig": {
@@ -27,6 +30,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.6",
