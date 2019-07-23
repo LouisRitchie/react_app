@@ -42,9 +42,12 @@
     "babel-loader": "^8.0.6",
     "css-loader": "^3.1.0",
     "file-loader": "^4.1.0",
+    "install": "^0.13.0",
     "json5-loader": "^3.0.0",
+    "npm": "^6.10.1",
     "style-loader": "^0.23.1",
     "svg-react-loader": "^0.4.6",
-    "webpack-cli": "^3.3.6"
+    "webpack-cli": "^3.3.6",
+    "webpack-visualizer-plugin": "^0.1.11"
   }
 }

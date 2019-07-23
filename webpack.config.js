@@ -1,3 +1,5 @@
+var Visualizer = require('webpack-visualizer-plugin');
+
 const baseConfig = {
   mode: 'none', // TODO we will set up dev/production configs at a later date; same mode for dev/prod until then.
   module: {
@@ -47,7 +49,8 @@ module.exports = [
     output: {
       filename: 'client.js',
       path: __dirname + '/dist'
-    }
+    },
+    plugins: [new Visualizer({ filename: 'client-stats.html' })]
   },
 
   // SERVER
@@ -58,6 +61,7 @@ module.exports = [
     output: {
       filename: 'server.js',
       path: __dirname + '/dist'
-    }
+    },
+    plugins: [new Visualizer({ filename: 'server-stats.html' })]
   }
 ]
