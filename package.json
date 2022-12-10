@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "cookie-parser": "^1.4.4",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "http-errors": "^1.7.3",
     "prop-types": "^15.6.1",
     "react": "^16.8.6",
